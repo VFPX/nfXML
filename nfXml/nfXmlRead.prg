@@ -47,12 +47,18 @@ cerror = ''
 With omsxml As msxml.domdocument
 
 	.Async = .F.
+	
+	Do Case
+	Case '<' $ m.cxml
+		.LoadXML( m.cxml )
+	Case File(m.cxml)
+		.Load(m.cxml)
+	Other
+		Error 'nfXML '+m.calledfrom+': Invalid file or xml string '
+		Return .F.
+	Endcase
 
-	If Len(m.cxml) < 200 And File(m.cxml)
-		.Load( m.cxml )
-	Else
-		.LoadXML(m.cxml)
-	Endif
+	
 
 	If !Empty(.parseerror.reason)
 
