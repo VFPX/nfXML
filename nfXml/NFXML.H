@@ -1,4 +1,4 @@
 #DEFINE NODETEXTTAG '_nodetext_'
 #Define ATTRIBUTETAG '_attr_'
-#define escapeList ':,_,(,_l_,),_r_,-,_h_,.,_d_'
+#define escapeList ':,_c_,(,_l_,),_r_,-,_,.,_p_'
 #define escapeCount 5
