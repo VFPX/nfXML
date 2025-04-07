@@ -2,7 +2,7 @@
 
 **Provides two simple to use functions to parse/stringify XML **
 
-Project Manager: Marco Plaza
+Project developer: Marco Plaza  [GitHub/nfoxdev](https://github.com/nfoxdev)
 
 Project includes:
 * nfXmlRead.prg: standalone function, receives valid XML string or file name, returns VFP empty-based object.
